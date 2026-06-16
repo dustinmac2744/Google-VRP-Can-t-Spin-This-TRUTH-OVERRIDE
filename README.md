@@ -55,6 +55,14 @@ Here’s the evidence.
 
 ---
 
+The following repositories contain the sequential records and verification logs supporting this documentation:
+
+* [my-experience-with-the-Google-vrp-front-and-gas-lighting-backend-verifying](https://github.com/dustinmac2744/my-experience-with-the-Google-vrp-front-and-gas-lighting-backend-verifying)
+* [Broken-Trust-Bad-Faith-Google-VRP-Gaslighting-vs-Backend-Verifying](https://github.com/dustinmac2744/Broken-Trust-Bad-Faith-Google-VRP-Gaslighting-vs-Backend-Verifying)
+* [vrp-negligence-undisputable-proof-and-evidence-ripping-off-researchers](https://github.com/dustinmac2744/vrp-negligence-undisputable-proof-and-evidence-ripping-off-researchers)
+
+---
+
 ## 🔍 Transparency Statement
 
 All May 11 wording shown here comes from the original May 11 Google page as it existed at the time. Microsoft Copilot pulled that text directly from the live webpage when I saved it into my GitHub. Everything in this reconstruction comes only from that preserved GitHub copy — nothing was invented, altered, or taken from anywhere else.
