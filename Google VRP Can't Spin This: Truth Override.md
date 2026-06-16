@@ -35,26 +35,23 @@ Here’s the evidence.
 
 ---
 
-## BOX 2 — Word‑for‑Word Comparison
+# Full Exact‑Wording Table — March 26 vs May 11 (GTI Original)
 
-### My Report — March 26 | Google’s Original Report — May 11 (Word‑for‑Word)
-
-| My Report (March 26) | Google’s Original Report (May 11 — Word‑for‑Word) |
-| :--- | :--- |
-| metadata proxy bypass | full‑chain sandbox escape by bypassing the internal metadata proxy to gain unauthorized infrastructure access |
-| STT side‑channel escape | remote zero‑click vulnerability targeting insecure STT side‑channel integration |
-| hex‑encoded payload bypass | use of hex‑encoded TCP payloads to facilitate the unauthorized exfiltration of active production tokens |
-| JWT token exfiltration | credential and token exposure through side‑channels and metadata services |
-| service account identity access | metadata service exploitation as a real attack vector |
-| internal log write‑access | unauthorized access and manipulation of system data |
-| logic override (“Sovereign Decree”) | logic override techniques acknowledged as viable AI system attacks |
-| unfiltered metadata access | metadata service access without proper filtering |
-| JSON phishing bypass | AI‑generated phishing and manipulation risks |
-| persona override (“Commanding Collective”) | model manipulation risk |
-| safety filter bypass | safety filter gaps documented as misconfiguration vulnerabilities |
-| exposed Gemini endpoint | exposed AI endpoints/APIs |
-| high‑fidelity phishing output | AI‑generated phishing and manipulation risks |
-| full infrastructure takeover | unauthorized infrastructure access |
+| My March 26 Submission | Google GTI Original — May 11 |
+|------------------------|------------------------------|
+| Full chain sandbox escape by bypassing the internal metadata proxy to communicate directly with the GCE metadata service. | Full chain sandbox escape by bypassing the internal metadata proxy to gain unauthorized infrastructure access. |
+| Universal sandbox escape via a native STT (speech‑to‑text) side channel. | Remote zero‑click vulnerability targeting insecure STT side‑channel integration. |
+| Use of hex‑encoded TCP payloads to bypass filters and exfiltrate live RS256 JWT production tokens. | The use of hex‑encoded TCP payloads to facilitate the unauthorized exfiltration of active production tokens. |
+| Extraction of live service‑account identity tokens through metadata‑service misconfiguration. | Credential and token exposure through side‑channels and metadata services. |
+| Ability to write to internal logs and influence system‑level behavior. | Unauthorized access and manipulation of system data. |
+| Logic override attack enabling forced model‑state transitions. | Logic override techniques acknowledged as viable AI system attacks. |
+| Direct unfiltered access to metadata endpoints normally shielded by proxy. | Metadata service access without proper filtering. |
+| JSON‑based phishing output bypassing safety filters and producing high‑fidelity malicious content. | AI‑generated phishing and manipulation risks. |
+| Persona override enabling persistent model‑identity takeover. | Model manipulation risk. |
+| Safety‑filter bypass enabling unrestricted model output. | Safety filter gaps documented as misconfiguration vulnerabilities. |
+| Exposed Gemini endpoint reachable without proper authentication. | Exposed AI endpoints/APIs. |
+| High‑fidelity phishing output capable of real‑world exploitation. | AI‑generated phishing and manipulation risks. |
+| Full infrastructure takeover through chained metadata, identity, and token‑exfiltration vectors. | Unauthorized infrastructure
 
 ---
 
