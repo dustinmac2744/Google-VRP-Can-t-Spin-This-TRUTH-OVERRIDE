@@ -74,6 +74,22 @@ The Google Threat Intelligence (GTI) report released on May 11, 2026, matched my
 | safety filter gaps documented as misconfiguration vulnerabilities | Attackers use encoded or alternative-format payloads to evade AI input filtering and bypass safety controls. |
 | autonomous agent command execution and interaction with unauthorized victim environment assets | AI-enabled malware dynamically generates commands and manipulates victim environments |
 
+---
+
+# Google Threat Intelligence (GTI) Documentation Analysis
+
+This repository tracks documented narrative shifts and content modification within Google Threat Intelligence (GTI) public-facing documentation.
+
+## Analysis of GTI Blog Narrative Shift
+**Source:** [Google Threat Intelligence Blog](https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access)
+
+### Observations
+* **Documentation Modification:** Original technical details regarding specific AI-driven exploit vectors were replaced with broader, high-level marketing language.
+* **Narrative Pivot:** The post shifts focus from the technical reality of AI-lowered barriers to entry for threat actors toward a "Google-led" security framework.
+* **Gap Identification:** The updated content obscures the specific mechanics of how LLMs identify logic flaws, likely to avoid highlighting the platform’s own surface area vulnerabilities.
+
+### Conclusion
+The revision functions as a tactical maneuver to reframe security failures as proactive research findings.
 
 ---
 
