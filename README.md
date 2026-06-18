@@ -55,6 +55,28 @@ Here’s the evidence.
 
 ---
 
+The Google Threat Intelligence (GTI) report released on May 11, 2026, matched my March 26 technical submission almost word-for-word. After I submitted a formal re-triage request on May 13 to address these findings, Google silently altered their reporting in the May 19 update. They stripped out the original, precise terminology and replaced it with generic, abstracted language without providing any public notice. This shift was a clear attempt to distance their official reporting from the original technical data I provided, effectively obscuring the source of the findings.
+
+---
+
+| Google GTI release May 11th | Google GTI release May 19th |
+| :--- | :--- |
+| attackers targeting misconfigured or exposed AI model endpoints | Attackers may target exposed AI endpoints or metadata services |
+| credential and token exposure through side-channels and metadata services | Credential and token exposure is a major AI attack vector |
+| JWT tokens accessible via metadata services | Identity tokens can be accessed through misconfigured AI systems |
+| full-chain sandbox escape by bypassing the internal metadata proxy to gain unauthorized infrastructure access | Initial access through AI systems can lead to full environment compromise |
+| logic override techniques acknowledged as viable AI system attacks | Logic bypass techniques allow attackers to override AI safety controls |
+| use of hex-encoded TCP payloads to facilitate the unauthorized exfiltration of active production tokens | Attackers use encoded payloads to evade AI input filtering |
+| insecure system design and prompt-injection vulnerabilities | Structured prompts and data formats can be abused to generate harmful content |
+| insecure system design and prompt-injection vulnerabilities | Persona manipulation and prompt injection remain key LLM attack methods |
+| AI-generated phishing and manipulation risks | AI systems can be exploited to produce realistic phishing content |
+| misconfigured AI environments allow attackers to manipulate models | Misconfigured AI environments may allow unauthorized access to internal services |
+| safety filter gaps documented as misconfiguration vulnerabilities | Attackers use encoded or alternative-format payloads to evade AI input filtering and bypass safety controls. |
+| autonomous agent command execution and interaction with unauthorized victim environment assets | AI-enabled malware dynamically generates commands and manipulates victim environments |
+
+
+---
+
 The following repositories contain the sequential records and verification logs supporting this documentation:
 
 * [my-experience-with-the-Google-vrp-front-and-gas-lighting-backend-verifying](https://github.com/dustinmac2744/my-experience-with-the-Google-vrp-front-and-gas-lighting-backend-verifying)
