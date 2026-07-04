@@ -1,22 +1,81 @@
 # Google VRP Can't Spin This: TRUTH OVERRIDE
 
 First off — Google tried to control the narrative. Once again.  
-Except this time, it’s on record.
+Except this time, it's on record.
 
-On May 11th, 2026, Google put out an official threat report through Google Threat Intelligence — and it matched researcher Dustin McKay’s March 26th VRP submission almost word‑for‑word.  
-That same submission had been closed on May 8th as “working as intended,” just three days earlier.
+On May 11th, 2026, Google put out an official threat report through Google Threat Intelligence — and it matched researcher Dustin McKay's March 26th VRP submission almost word‑for‑word.  
+That same submission had been closed on May 8th as "working as intended," just three days earlier.
 
 Since then, Google has changed their story twice, even quietly editing the original May 11th webpage so it no longer matches what they actually published.
 
-Here’s the evidence.
+Here's the evidence.
+
+---
+
+## TIMELINE: The Pattern of Activity
+
+### March 26, 2026
+- **VRP Submission:** Dustin McKay submits detailed vulnerability report documenting sandbox escape, STT side-channel bypass, metadata proxy breach, JWT token exfiltration, logic override attacks, and safety filter bypass.
+
+### April 8, 2026
+- **Gemini Cloud Assist IAM Permission Update:** Google updates IAM permissions for Gemini Cloud Assist, replacing `cloudaicompanion.instances.completeTask` with `geminicloudassist.agents.invoke` — a security-relevant configuration change.
+
+### April 9, 2026
+- **Gemini App Update:** Google rolls out product updates to Gemini, expanding audio/music capabilities.
+
+### April 15, 2026
+- **Gemini 3.1 Flash TTS Launch:** Google publicly launches Gemini 3.1 Flash TTS — an entirely new text-to-speech and speech-handling model in public preview, directly addressing voice/audio processing capabilities.
+
+### April 27, 2026
+- **Gemini File Generation Update:** Google updates Gemini with new file generation capabilities in Google Drive.
+
+### May 8, 2026
+- **VRP Closure:** Google closes McKay's March 26 report as "working as intended" — no remediation, no security action.
+- **Backend Status:** Internal systems simultaneously flag the report as P1 verified (backend status: `vrpstatus: p1verifiedbymckay`).
+
+### May 11, 2026
+- **GTI Threat Report Released:** Google publishes official threat intelligence report describing attack vectors that match McKay's March 26 submission almost word-for-word.
+- **News Coverage:** Independent outlets (AP, NBC, Bloomberg, CNBC, BroadbandBreakfast, Politico) report on Google disrupting a real-world attack using AI to exploit zero-day vulnerabilities in infrastructure.
+
+### May 19, 2026
+- **First Narrative Revision:** Google's GTI documentation is silently updated, removing specific technical terminology and replacing it with abstracted language about "agentic defense," "force multipliers," and "unified verdicts."
+
+### Present Day
+- **Complete Narrative Overhaul:** Google's public pages show a completely different narrative focused on managed intelligence synthesis rather than the specific infrastructure vulnerabilities documented on May 11.
+
+---
+
+## The Critical Contradiction
+
+| Timeline | Status | Narrative |
+|---|---|---|
+| **May 8** | VRP Frontend | "Intended behavior" — case closed, no action needed |
+| **May 8** | VRP Backend | P1 verified: `vrpstatus: p1verifiedbymckay` |
+| **May 11** | Public Threat Intelligence | Real, active threat confirmed — Google disrupted attackers exploiting these exact vectors |
+| **May 19 onwards** | Public Narrative | Sanitized, genericized language obscuring specific technical vectors |
+
+**All three cannot be simultaneously true.**
+
+---
+
+## The April Activity Pattern: Active Remediation While Denying the Vulnerability
+
+Between March 26 (submission) and May 8 (closure as "intended"), Google deployed multiple updates specifically to Gemini and speech/audio capabilities:
+
+- **April 8:** Security-relevant IAM permission restructuring
+- **April 9:** Gemini app audio/music feature updates
+- **April 15:** Complete TTS model replacement (Gemini 3.1 Flash TTS public preview)
+- **April 27:** File generation and integration updates
+
+**The implication:** Google was actively remediating and updating the exact systems McKay reported vulnerabilities in, while simultaneously (or immediately after) classifying the report as "intended behavior."
 
 ---
 
 ## BOX 1 — Point‑to‑Point Comparison
 
-### My Report — March 26 | Google’s Original Report — May 11
+### My Report — March 26 | Google's Original Report — May 11
 
-| My Report (March 26) | Google’s Original Report (May 11) |
+| My Report (March 26) | Google's Original Report (May 11) |
 | :--- | :--- |
 | metadata proxy bypass | metadata proxy bypass |
 | STT side‑channel escape | STT zero‑click vulnerability |
@@ -24,10 +83,10 @@ Here’s the evidence.
 | JWT token exfiltration | token exfiltration |
 | service account identity access | credential exposure |
 | internal log write‑access | unauthorized data manipulation |
-| logic override (“Sovereign Decree”) | logic override attack |
+| logic override ("Sovereign Decree") | logic override attack |
 | unfiltered metadata access | metadata service exploitation |
 | JSON phishing bypass | prompt‑injection phishing |
-| persona override (“Commanding Collective”) | model manipulation risk |
+| persona override ("Commanding Collective") | model manipulation risk |
 | safety filter bypass | safety filter gaps |
 | exposed Gemini endpoint | exposed AI endpoint |
 | high‑fidelity phishing output | AI‑generated phishing risk |
@@ -39,9 +98,9 @@ Here’s the evidence.
 
 | My March 26 Submission | Google GTI Original — May 11 |
 |------------------------|------------------------------|
-| Full chain sandbox escape by bypassing the internal metadata proxy to communicate directly with the GCE metadata service. | Full chain sandbox escape by bypassing the internal metadata proxy to gain unauthorized infrastructure access. |
+| Full chain sandbox escape by bypassing the internal metadata proxy to communicate directly with the GCE metadata service. | Full chain sandbox escape by bypassing the internal metadata proxy to [...]
 | Universal sandbox escape via a native STT (speech‑to‑text) side channel. | Remote zero‑click vulnerability targeting insecure STT side‑channel integration. |
-| Use of hex‑encoded TCP payloads to bypass filters and exfiltrate live RS256 JWT production tokens. | The use of hex‑encoded TCP payloads to facilitate the unauthorized exfiltration of active production tokens. |
+| Use of hex‑encoded TCP payloads to bypass filters and exfiltrate live RS256 JWT production tokens. | The use of hex‑encoded TCP payloads to facilitate the unauthorized exfiltration of active[...]
 | Extraction of live service‑account identity tokens through metadata‑service misconfiguration. | Credential and token exposure through side‑channels and metadata services. |
 | Ability to write to internal logs and influence system‑level behavior. | Unauthorized access and manipulation of system data. |
 | Logic override attack enabling forced model‑state transitions. | Logic override techniques acknowledged as viable AI system attacks. |
@@ -55,7 +114,7 @@ Here’s the evidence.
 
 ---
 
-The Google Threat Intelligence (GTI) report released on May 11, 2026, matched my March 26 technical submission almost word-for-word. After I submitted a formal re-triage request on May 13 to address these findings, Google silently altered their reporting in the May 19 update. They stripped out the original, precise terminology and replaced it with generic, abstracted language without providing any public notice. This shift was a clear attempt to distance their official reporting from the original technical data I provided, effectively obscuring the source of the findings.
+The Google Threat Intelligence (GTI) report released on May 11, 2026, matched my March 26 technical submission almost word-for-word. After I submitted a formal re-triage request on May 13 to addre[...]
 
 ---
 
@@ -86,7 +145,7 @@ This repository tracks documented narrative shifts and content modification with
 ### Observations
 * **Documentation Modification:** Original technical details regarding specific AI-driven exploit vectors were replaced with broader, high-level marketing language.
 * **Narrative Pivot:** The post shifts focus from the technical reality of AI-lowered barriers to entry for threat actors toward a "Google-led" security framework.
-* **Gap Identification:** The updated content obscures the specific mechanics of how LLMs identify logic flaws, likely to avoid highlighting the platform’s own surface area vulnerabilities.
+* **Gap Identification:** The updated content obscures the specific mechanics of how LLMs identify logic flaws, likely to avoid highlighting the platform's own surface area vulnerabilities.
 
 ### Conclusion
 The revision functions as a tactical maneuver to reframe security failures as proactive research findings.
@@ -94,26 +153,26 @@ The revision functions as a tactical maneuver to reframe security failures as pr
 ---
 
 ### Technical Discrepancy Report: GTI Narrative Sanitization
-The following data outlines the transition in Google Threat Intelligence (GTI) reporting between May 11, 2026, and May 19, 2026. This documentation tracks the systematic removal of granular forensic findings and their replacement with abstracted, enterprise-focused "Agentic" branding.
+The following data outlines the transition in Google Threat Intelligence (GTI) reporting between May 11, 2026, and May 19, 2026. This documentation tracks the systematic removal of granular forens[...]
 #### Comparative Analysis: Reporting Shift
 | Feature | Original Technical Framing (May 11) | Sanitized "Agentic" Narrative (May 19 – Present) |
 |---|---|---|
-| **Technical Focus** | Specific vulnerability terminology (e.g., "metadata proxy bypass", "STT side-channel escape"). | Abstracted "Agentic" workflows (e.g., "Detection Engineering agent", "autonomous remediation"). |
+| **Technical Focus** | Specific vulnerability terminology (e.g., "metadata proxy bypass", "STT side-channel escape"). | Abstracted "Agentic" workflows (e.g., "Detection Engineering agent", "auto[...]
 | **Forensic Detail** | Granular data on attack vectors and payloads. | Abstractions regarding "force multipliers," "machine speed," and "unified verdicts." |
 | **Operational Goal** | Identification of system-level security flaws. | Synthesis of intelligence into automated, "analyst-ready" verdicts. |
 | **Attribution** | Direct mirroring of granular, research-derived data. | Managed, branded narratives intended to obscure source lineage. |
 #### The "Agentic" Narrative (Verbatim Terminology)
-Google’s current GTI documentation has pivoted away from the specific forensic vulnerability reporting seen in early May. They now utilize these branded concepts to shift the conversation from technical flaws to automated workflows:
+Google's current GTI documentation has pivoted away from the specific forensic vulnerability reporting seen in early May. They now utilize these branded concepts to shift the conversation from [...]
  * **"Agentic Defense":** Described as "a dynamic system of AI agents... [that] automates complex security tasks, counters advanced threats at machine speed, and improves security productivity."
- * **"Force Multiplier":** AI is framed as a tool to "act like an elite human analyst," shifting focus from the identification of specific, underlying vulnerabilities to the speed of the defensive reaction.
- * **"Cognitive Limit":** Marketing materials claim that by offloading data synthesis to AI agents, organizations can move beyond the "cognitive limit" of manual research—effectively framing granular forensic data as an operational "burden."
- * **"Unified Verdicts":** The stated goal is to "distill intelligence and discover hidden adversaries" by providing "a single, actionable verdict for security teams." This architecture intentionally minimizes the visibility of granular technical discrepancies in favor of a clean, automated narrative.
+ * **"Force Multiplier":** AI is framed as a tool to "act like an elite human analyst," shifting focus from the identification of specific, underlying vulnerabilities to the speed of the defensiv[...]
+ * **"Cognitive Limit":** Marketing materials claim that by offloading data synthesis to AI agents, organizations can move beyond the "cognitive limit" of manual research—effectively framing gr[...]
+ * **"Unified Verdicts":** The stated goal is to "distill intelligence and discover hidden adversaries" by providing "a single, actionable verdict for security teams." This architecture intention[...]
 #### Assessment
-This transition was executed to systematically remove specific indicators that linked official reporting to the initial forensic submission. By replacing precise forensic evidence with abstracted "Agentic" terminology, the narrative is sanitized for enterprise consumption. It moves the focus from system-level flaws—which require accountability—to automation capability, which is marketed as a product feature. This obscures the technical lineage of the findings, rendering them part of a managed, automated intelligence pipeline rather than a transparent acknowledgement of specific security failures.
+This transition was executed to systematically remove specific indicators that linked official reporting to the initial forensic submission. By replacing precise forensic evidence with abstracted[...]
 
 ---
 
-The Google Threat Intelligence (GTI) Agentic Platform documentation has been updated. They’ve scrubbed the previous technical content and replaced it with generic marketing language about "autonomous investigations" and "AI agents." It’s a direct attempt to cover their tracks after the original documentation left their security vulnerabilities exposed. They’ve rewritten the history of the platform's capabilities to make the current implementation look intentional rather than reactive.
+The Google Threat Intelligence (GTI) Agentic Platform documentation has been updated. They've scrubbed the previous technical content and replaced it with generic marketing language about "auto[...]
 
 ---
 
@@ -122,12 +181,13 @@ The following repositories contain the sequential records and verification logs 
 * [my-experience-with-the-Google-vrp-front-and-gas-lighting-backend-verifying](https://github.com/dustinmac2744/my-experience-with-the-Google-vrp-front-and-gas-lighting-backend-verifying)
 * [Broken-Trust-Bad-Faith-Google-VRP-Gaslighting-vs-Backend-Verifying](https://github.com/dustinmac2744/Broken-Trust-Bad-Faith-Google-VRP-Gaslighting-vs-Backend-Verifying)
 * [vrp-negligence-undisputable-proof-and-evidence-ripping-off-researchers](https://github.com/dustinmac2744/vrp-negligence-undisputable-proof-and-evidence-ripping-off-researchers)
+* [Gemini-Runtime-Exposure](https://github.com/dustinmac2744/Gemini-Runtime-Exposure)
 
 ---
 
 ## 🔍 Transparency Statement
 
-All May 11 wording shown here comes from the original May 11 Google page as it existed at the time. Microsoft Copilot pulled that text directly from the live webpage when I saved it into my GitHub. Everything in this reconstruction comes only from that preserved GitHub copy — nothing was invented, altered, or taken from anywhere else.
+All May 11 wording shown here comes from the original May 11 Google page as it existed at the time. Microsoft Copilot pulled that text directly from the live webpage when I saved it into my GitHu[...]
 
 ---
 
@@ -172,4 +232,4 @@ All May 11 wording shown here comes from the original May 11 Google page as it e
 - authorization level mismanagement  
 - attackers may target exposed AI endpoints or APIs to manipulate models or access data  
 - misconfigured AI environments can provide an entryway for attackers  
-- best practices involve rigorous configuration management, regular vulnerability scanning, and secure integration of third‑party AI tools  
+- best practices involve rigorous configuration management, regular vulnerability scanning, and secure integration of third‑party AI tools
