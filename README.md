@@ -114,7 +114,7 @@ Between March 26 (submission) and May 8 (closure as "intended"), Google deployed
 
 ---
 
-The Google Threat Intelligence (GTI) report released on May 11, 2026, matched my March 26 technical submission almost word-for-word. After I submitted a formal re-triage request on May 13 to addre[...]
+The Google Threat Intelligence (GTI) report released on May 11, 2026, matched my March 26 technical submission almost word-for-word. After I submitted a formal re-triage request on May 13 to address the apparent contradiction between the VRP closure and Google's own published threat intelligence, Google's response was to systematically revise their public narrative without acknowledgment, disclosure, or changelog notation.
 
 ---
 
@@ -153,26 +153,30 @@ The revision functions as a tactical maneuver to reframe security failures as pr
 ---
 
 ### Technical Discrepancy Report: GTI Narrative Sanitization
-The following data outlines the transition in Google Threat Intelligence (GTI) reporting between May 11, 2026, and May 19, 2026. This documentation tracks the systematic removal of granular forens[...]
+The following data outlines the transition in Google Threat Intelligence (GTI) reporting between May 11, 2026, and May 19, 2026. This documentation tracks the systematic removal of granular forensic indicators and their replacement with abstracted, branded terminology designed to obscure the source lineage of the research.
+
 #### Comparative Analysis: Reporting Shift
 | Feature | Original Technical Framing (May 11) | Sanitized "Agentic" Narrative (May 19 – Present) |
 |---|---|---|
-| **Technical Focus** | Specific vulnerability terminology (e.g., "metadata proxy bypass", "STT side-channel escape"). | Abstracted "Agentic" workflows (e.g., "Detection Engineering agent", "auto[...]
+| **Technical Focus** | Specific vulnerability terminology (e.g., "metadata proxy bypass", "STT side-channel escape"). | Abstracted "Agentic" workflows (e.g., "Detection Engineering agent", "autonomous intelligence synthesis"). |
 | **Forensic Detail** | Granular data on attack vectors and payloads. | Abstractions regarding "force multipliers," "machine speed," and "unified verdicts." |
 | **Operational Goal** | Identification of system-level security flaws. | Synthesis of intelligence into automated, "analyst-ready" verdicts. |
 | **Attribution** | Direct mirroring of granular, research-derived data. | Managed, branded narratives intended to obscure source lineage. |
+
 #### The "Agentic" Narrative (Verbatim Terminology)
-Google's current GTI documentation has pivoted away from the specific forensic vulnerability reporting seen in early May. They now utilize these branded concepts to shift the conversation from [...]
- * **"Agentic Defense":** Described as "a dynamic system of AI agents... [that] automates complex security tasks, counters advanced threats at machine speed, and improves security productivity."
- * **"Force Multiplier":** AI is framed as a tool to "act like an elite human analyst," shifting focus from the identification of specific, underlying vulnerabilities to the speed of the defensiv[...]
- * **"Cognitive Limit":** Marketing materials claim that by offloading data synthesis to AI agents, organizations can move beyond the "cognitive limit" of manual research—effectively framing gr[...]
- * **"Unified Verdicts":** The stated goal is to "distill intelligence and discover hidden adversaries" by providing "a single, actionable verdict for security teams." This architecture intention[...]
+Google's current GTI documentation has pivoted away from the specific forensic vulnerability reporting seen in early May. They now utilize these branded concepts to shift the conversation from accountability to innovation and speed.
+
+ * **"Agentic Defense":** Described as "a dynamic system of AI agents... [that] automates complex security tasks, counters advanced threats at machine speed, and improves security productivity." This frames the problem as solvable through agent automation rather than addressing the underlying architectural failures that enabled the vulnerabilities in the first place.
+ * **"Force Multiplier":** AI is framed as a tool to "act like an elite human analyst," shifting focus from the identification of specific, underlying vulnerabilities to the speed of the defensive response — effectively reframing inadequate architecture as an efficiency problem rather than a safety problem.
+ * **"Cognitive Limit":** Marketing materials claim that by offloading data synthesis to AI agents, organizations can move beyond the "cognitive limit" of manual research—effectively framing granular forensic work as a limitation to be overcome rather than a necessary practice.
+ * **"Unified Verdicts":** The stated goal is to "distill intelligence and discover hidden adversaries" by providing "a single, actionable verdict for security teams." This architecture intentionally consolidates complex, forensic findings into simplified narratives that obscure technical depth.
+
 #### Assessment
-This transition was executed to systematically remove specific indicators that linked official reporting to the initial forensic submission. By replacing precise forensic evidence with abstracted[...]
+This transition was executed to systematically remove specific indicators that linked official reporting to the initial forensic submission. By replacing precise forensic evidence with abstracted, innovation-focused language, Google shifted public perception from "our infrastructure had critical vulnerabilities" to "we are leading the industry in AI-powered defense."
 
 ---
 
-The Google Threat Intelligence (GTI) Agentic Platform documentation has been updated. They've scrubbed the previous technical content and replaced it with generic marketing language about "auto[...]
+The Google Threat Intelligence (GTI) Agentic Platform documentation has been updated. They've scrubbed the previous technical content and replaced it with generic marketing language about "autonomous agents," "cognitive limits," and "machine-speed defense" — terminology that obscures the specificity of what was actually found in the original May 11 report and how closely it matched the March 26 submission.
 
 ---
 
@@ -187,7 +191,7 @@ The following repositories contain the sequential records and verification logs 
 
 ## 🔍 Transparency Statement
 
-All May 11 wording shown here comes from the original May 11 Google page as it existed at the time. Microsoft Copilot pulled that text directly from the live webpage when I saved it into my GitHu[...]
+All May 11 wording shown here comes from the original May 11 Google page as it existed at the time. Microsoft Copilot pulled that text directly from the live webpage when I saved it into my GitHub repository for preservation. This action was necessary because Google later modified that page without public notification, changelog, or redirect markers — making the captured text the only surviving record of the original May 11 publication.
 
 ---
 
